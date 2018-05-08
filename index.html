@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meter>
+    <!-- <script type="text/javascript" src="infinitusInterfaces.js"></script>
+    <script type="text/javascript" src="infinitusAppOperation.js"></script>
+    <script type="text/javascript" src="demo.js"></script> -->
+    <script type="text/javascript" src="infinitusAppOperation.js"></script>
+    <script type="text/javascript" src="infinitusInterfaces.js"></script>
+    <script src="./sea.js"></script>
+    <!--<script type="text/javascript" src="index.js"></script>-->
+    <script>
+        // Set configuration
+        seajs.config({
+            alias: {
+                "jquery": "jquery/jquery/1.10.1/jquery.js"
+            }
+        });
+
+        seajs.use("./main");
+        // function setImag(path) {
+        //     document.getElementById("img").src = "" + path
+        // }
+
+
+        // function refresh() {
+        //     parent.location.reload();
+        // }
+    </script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <h1>My Web Page</h1>
+    <button type="button" onclick="xxOpenCamera()">Open Camera</button>
+    <button type="button" onclick="xxOpenPhotoAlbum()">Open Photo Album</button>
+    <button type="button" onclick="xxRequestLocation()">Get Location</button>
+    <!-- <button type="button" onclick="refresh()">Refresh</button> -->
+    <button type="button" onclick="xxStartRecord()">Start Record</button>
+    <!-- <button type="button" onclick="InfinitusOperation.infinitus_StopRecord()">Stop Record</button> -->
+    <!-- <button type="button" onclick="PlayRecord()">Play Record</button> -->
+    <p><img id="img" src="" width="100" height="100" /></p>
+    <h1 id="Result">Here will show Result !!!!</h1>
+    <p id="locate">locate.</p>
+    <p id="demo">A Paragraph.</p>
+</body>
+
+</html>
